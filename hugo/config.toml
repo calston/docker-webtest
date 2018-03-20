@@ -1,4 +1,5 @@
 title = "Container Site"
-#baseurl = "/"
+baseurl = "/"
 languageCode = "en-us"
 theme = "hugo-theme-air"
+publishDir = "/usr/share/nginx/html"
