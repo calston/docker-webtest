@@ -8,7 +8,7 @@ RUN apt-get install hugo
 COPY hugo /src
 COPY default.conf /etc/nginx/conf.d/default.conf
 
-EXPOSE 8080
-
+RUN "ls -al"
 RUN hugo
-# /usr/share/nginx/html
+
+EXPOSE 8080
