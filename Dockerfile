@@ -1,14 +1,14 @@
 FROM nginx:alpine
 
-RUN apk update
-RUN apk install nginx hugo
+CMD apk update
+CMD apk install nginx hugo
 
-RUN mkdir /src
+CMD mkdir /src
 
 ADD hugo /src/
 COPY default.conf /etc/nginx/conf.d/default.conf
 
 WORKDIR /src
-RUN hugo
+CMD hugo
 
 EXPOSE 8080
