@@ -1,7 +1,7 @@
 FROM nginx:latest
 
-RUN apt-get update
-RUN apt-get install hugo
+RUN apk update
+RUN apk install nginx hugo
 
 RUN mkdir /src
 
