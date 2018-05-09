@@ -1,4 +1,4 @@
-FROM nginx:latest
+FROM nginx:alpine
 
 RUN apk update
 RUN apk install nginx hugo
